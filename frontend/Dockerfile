@@ -12,10 +12,8 @@ FROM base AS build
 COPY . .
 RUN npm run build
 
-FROM node:20-alpine AS production
-WORKDIR /app
-COPY --from=build /app/dist ./dist
-COPY package*.json .
-RUN npm install --only=production
-EXPOSE 8000
-CMD ["npm", "run", "start", "--", "--host", "0.0.0.0", "--port", "80"]
+FROM nginx:alpine AS production
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
