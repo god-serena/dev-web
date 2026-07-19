@@ -72,9 +72,6 @@ export default function App() {
             <h2 className="text-sm font-bold uppercase tracking-wider text-rose-400 font-mono">
               Connection Failure
             </h2>
-            <p className="text-xs text-gray-400 leading-relaxed font-light">
-              {error || "Could not retrieve portfolio credentials from the database server."}
-            </p>
           </div>
           <button
             onClick={fetchResumeData}
