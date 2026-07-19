@@ -1,0 +1,246 @@
+{
+  "name": "Ar-jay C. Dayanan",
+  "title": "Full-Stack Developerr",
+  "profileSummary": "Test",
+  "avatarUrl": "/static/avatars/avatar_owner.jpg",
+  "contact": {
+    "email": "acdayanan@gmail.com",
+    "phone": "+639665767659",
+    "location": "Toledo City, Cebu 6038",
+    "github": "github.com/arjaydayanan",
+    "linkedin": "linkedin.com/in/arjaydayanan",
+    "website": "arjaydayanan.dev"
+  },
+  "experiences": [
+    {
+      "id": "exp-1",
+      "company": "TrustArc",
+      "role": "Associate Technical Account Manager I (ATAM)",
+      "location": "Remote",
+      "startDate": "2025-11",
+      "endDate": "2026-04",
+      "current": false,
+      "description": [
+        "Deploy and configure CMP scripts and consent banners across client websites.",
+        "Debug script behavior, cookies, and consent flows using Chrome DevTools and Google Tag Manager.",
+        "Troubleshoot implementation issues across browser environments.",
+        "Validate deployments to ensure correct consent handling and privacy compliance."
+      ],
+      "techStack": [
+        "JavaScript",
+        "HTML/CSS",
+        "Chrome DevTools",
+        "Google Tag Manager"
+      ],
+      "order": 0
+    },
+    {
+      "id": "exp-2",
+      "company": "Channel Information Technology Support and Leasing Services Corp.",
+      "role": "Full-Stack Developer",
+      "location": "Cebu City (Hybrid)",
+      "startDate": "2023-02",
+      "endDate": "2025-10",
+      "current": false,
+      "description": [
+        "Developed and maintained internal web applications across frontend and backend systems with Vue.js, Django, and PostgreSQL as tech stack.",
+        "Implemented new features, fixed QA issues, and improved API performance.",
+        "Refactored modules and added unit tests to improve maintainability and reliability.",
+        "Built Vue.js templates from Figma designs and participated in GitLab code reviews."
+      ],
+      "techStack": [
+        "Vue.js",
+        "Django",
+        "PostgreSQL",
+        "Python",
+        "JavaScript",
+        "GitLab"
+      ],
+      "order": 1
+    },
+    {
+      "id": "exp-3",
+      "company": "Channel Information Technology Support and Leasing Services Corp.",
+      "role": "Associate Lead",
+      "location": "Cebu City (Hybrid)",
+      "startDate": "2024-04",
+      "endDate": "2024-11",
+      "current": false,
+      "description": [
+        "Assisted in coordinating sprint deliverables and managing release branches.",
+        "Organized milestone tickets and tracked unresolved issues across sprints."
+      ],
+      "techStack": [
+        "GitLab",
+        "Agile",
+        "Scrum"
+      ],
+      "order": 2
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "WebMart",
+      "role": "Full-Stack Developer",
+      "description": "A full-stack e-commerce platform with separate services for customers and sellers.",
+      "highlights": [
+        "Developing a full-stack e-commerce platform with separate services for customers and sellers.",
+        "Implementing REST APIs using Django Ninja and PostgreSQL for authentication, product management, and order processing.",
+        "Building responsive frontend components using React and TailwindCSS.",
+        "Containerizing the application using Docker to ensure consistent development and deployment environments."
+      ],
+      "techStack": [
+        "React",
+        "TailwindCSS",
+        "Django",
+        "Django Ninja",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "url": null,
+      "githubUrl": null,
+      "order": 0
+    },
+    {
+      "id": "proj-2",
+      "name": "Video Management System",
+      "role": "Full-Stack Developer",
+      "description": "A full-stack web application for managing video content and metadata.",
+      "highlights": [
+        "Developed a full-stack web application for managing video content and metadata.",
+        "Implemented REST APIs for CRUD operations using Django and Django Ninja.",
+        "Built a Vue 3 interface for interacting with backend services and displaying video records."
+      ],
+      "techStack": [
+        "Vue.js",
+        "Django",
+        "Django Ninja",
+        "PostgreSQL",
+        "Vue 3"
+      ],
+      "url": null,
+      "githubUrl": null,
+      "order": 1
+    },
+    {
+      "id": "proj-3",
+      "name": "Blogsite",
+      "role": "Full-Stack Developer",
+      "description": "A full-stack blogging platform integrating a Next.js frontend with a Flask backend API.",
+      "highlights": [
+        "Built a full-stack blogging platform integrating a Next.js frontend with a Flask backend API.",
+        "Implemented post creation, retrieval, and database interactions using SQLAlchemy.",
+        "Completed the project within a three-day development constraint to demonstrate rapid full-stack prototyping."
+      ],
+      "techStack": [
+        "Next.js",
+        "Flask",
+        "SQLAlchemy",
+        "Python",
+        "JavaScript"
+      ],
+      "url": null,
+      "githubUrl": null,
+      "order": 2
+    },
+    {
+      "id": "proj-4",
+      "name": "Romel Webmart",
+      "role": "Full-Stack Developer",
+      "description": "A web-based shopping platform built with the MEAN stack.",
+      "highlights": [
+        "Developed a web-based shopping platform using the MEAN stack.",
+        "Implemented product listings, shopping cart functionality, and order management features.",
+        "Collaborated within a SCRUM-based development workflow during the project."
+      ],
+      "techStack": [
+        "Angular",
+        "Express",
+        "Node.js",
+        "MongoDB",
+        "JavaScript"
+      ],
+      "url": null,
+      "githubUrl": null,
+      "order": 3
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-1",
+      "categoryName": "Web Development",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "HTML/CSS",
+        "SASS"
+      ]
+    },
+    {
+      "id": "skill-2",
+      "categoryName": "Frameworks",
+      "skills": [
+        "Vue.js",
+        "Django",
+        "Django Ninja",
+        "FastAPI",
+        "React",
+        "TailwindCSS",
+        "Angular",
+        "Express",
+        "Flask",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "skill-3",
+      "categoryName": "Databases",
+      "skills": [
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "id": "skill-4",
+      "categoryName": "Tools & DevOps",
+      "skills": [
+        "Docker",
+        "Git",
+        "GitLab",
+        "Chrome DevTools",
+        "Google Tag Manager",
+        "SQLAlchemy",
+        "Figma"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "school": "University of the Philippines Cebu",
+      "degree": "BS in Computer Science",
+      "fieldOfStudy": "Computer Science",
+      "location": "Gorordo Ave, Cebu City",
+      "startDate": "2019-08",
+      "endDate": "2023-07",
+      "current": false,
+      "bulletPoints": [
+        "Graduated Cum Laude",
+        "Gorordo Ave, Cebu City campus"
+      ]
+    },
+    {
+      "id": "edu-2",
+      "school": "University of the Philippines High School Cebu",
+      "degree": "High School Diploma",
+      "fieldOfStudy": "General Academic",
+      "location": "Gorordo Ave, Cebu City",
+      "startDate": "2017-08",
+      "endDate": "2019-06",
+      "current": false,
+      "bulletPoints": []
+    }
+  ],
+  "certifications": []
+}

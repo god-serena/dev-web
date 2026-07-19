@@ -1,0 +1,26 @@
+services:
+  db:
+    container_name: db_prod
+    env_file:
+      - prod.env
+
+  backend:
+    container_name: backend_prod
+    ports:
+      - "8000:8000"
+    env_file:
+      - prod.env
+
+  frontend:
+    container_name: visitor_prod
+    ports:
+      - "3000:3000"
+    env_file:
+      - prod.env
+
+  admin:
+    container_name: admin_prod
+    ports:
+      - "3001:3001"
+    env_file:
+      - prod.env

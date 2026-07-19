@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Usage:
+# ./run.sh             - Starts containers (foreground)
+# ./run.sh -d         - Starts containers in detached mode
+# ./run.sh --build    - Rebuilds images and starts containers
+# ./run.sh -d --build - Rebuilds and starts in detached mode
+
+docker compose -f docker-compose.yml -f docker-compose.override.yml up "$@"
