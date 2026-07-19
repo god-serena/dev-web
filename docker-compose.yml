@@ -1,6 +1,13 @@
 services:
   db:
     image: postgres:15-alpine
+    container_name: db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: portfolio
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     volumes:
       - type: volume
         source: postgres_data
@@ -9,16 +16,53 @@ services:
   backend:
     build:
       context: ./backend
+      target: development
+    container_name: backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/portfolio
+      ADMIN_PASSWORD: admin123
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /app
+      - type: volume
+        target: /app/static
     depends_on:
       - db
 
   frontend:
     build:
       context: ./frontend
+      target: development
+    container_name: visitor
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_BASE_URL: "http://localhost:8000"
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /app
+      - type: volume
+        target: /app/node_modules
 
   admin:
     build:
       context: ./admin
+      target: development
+    container_name: admin
+    ports:
+      - "3001:3001"
+    environment:
+      VITE_API_BASE_URL: "http://localhost:8000"
+    volumes:
+      - type: bind
+        source: ./admin
+        target: /app
+      - type: volume
+        target: /app/node_modules
     depends_on:
       - backend
 
