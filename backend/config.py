@@ -17,14 +17,11 @@ AVATAR_DIR = BASE_DIR / "static" / "avatars"
 DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
 AVATAR_DIR.mkdir(parents=True, exist_ok=True)
 
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
 SESSION_TOKEN = secrets.token_hex(32)
 
 # Database connection details
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/portfolio")
-# Clean up scheme if provided by hosts like Heroku/Render
-if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Flag to check if we can connect to PG
 USE_PG = True

@@ -10,10 +10,19 @@ import config
 
 app = FastAPI(title="Developer Portfolio API Workspace")
 
-# Enable CORS for local development ports
+
+# Configure CORS allowed origins
+allowed_origins = []
+env_origins = os.getenv("ALLOWED_ORIGINS")
+if env_origins:
+    for origin in env_origins.split(","):
+        clean_origin = origin.strip()
+        if clean_origin and clean_origin not in allowed_origins:
+            allowed_origins.append(clean_origin)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In development we can allow all or specific local client ports
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
