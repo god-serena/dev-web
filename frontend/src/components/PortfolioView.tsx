@@ -204,7 +204,7 @@ export default function PortfolioView({ data }: PortfolioViewProps) {
               <div className="flex items-center gap-2 p-2.5 bg-slate-900/60 border border-white/5 rounded-lg hover:border-indigo-500/30 transition-all">
                 <Github className="w-4 h-4 text-indigo-400 shrink-0" />
                 <a href={`https://${data.contact.github}`} target="_blank" rel="noopener noreferrer" className="hover:underline text-gray-300 hover:text-white truncate">
-                  {data.contact.github.replace('github.com/', '')}
+                  acdayanan
                 </a>
               </div>
             )}
@@ -213,7 +213,7 @@ export default function PortfolioView({ data }: PortfolioViewProps) {
               <div className="flex items-center gap-2 p-2.5 bg-slate-900/60 border border-white/5 rounded-lg hover:border-indigo-500/30 transition-all">
                 <Linkedin className="w-4 h-4 text-indigo-400 shrink-0" />
                 <a href={`https://${data.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline text-gray-300 hover:text-white truncate">
-                  {data.contact.linkedin.replace('linkedin.com/in/', '')}
+                  acdayanan
                 </a>
               </div>
             )}

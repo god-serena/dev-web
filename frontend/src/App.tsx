@@ -105,7 +105,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-2 uppercase tracking-widest">
           <span className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-            Built with React &bull; FastAPI &bull; PostgreSQL &bull; Docker
+            Built with React &bull; FastAPI &bull; PostgreSQL
           </span>
           <span className="text-[9px] text-gray-600">
             Built alongside Antigravity by Google DeepMind
