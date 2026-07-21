@@ -23,6 +23,7 @@ services:
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/portfolio
       ADMIN_PASSWORD: admin123
+      ALLOWED_ORIGINS: "http://localhost:3000,http://localhost:3001"
     volumes:
       - type: bind
         source: ./backend
@@ -35,7 +36,6 @@ services:
   frontend:
     build:
       context: ./frontend
-      target: development
     container_name: visitor
     ports:
       - "3000:3000"
@@ -51,7 +51,6 @@ services:
   admin:
     build:
       context: ./admin
-      target: development
     container_name: admin
     ports:
       - "3001:3001"
